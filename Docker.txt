@@ -1,0 +1,40 @@
+
+#docker process (only running)
+sudo docker ps
+
+#docker images 
+sudo docker images
+
+#All docker process 
+sudo docker ps -a
+
+#delete docker image
+suso docker rmi imageid
+
+#delete docker container
+suso docker rm containerid
+
+#run docker in detach mode and map port
+sudo docker run -d -p 80:80 nginx
+
+#inspect container
+
+Sudo docker inspect containerid
+
+#build docker file
+sudo docker build .
+
+#stop docker container
+sudo docker stop containerid
+
+#kill docker container(not graceful)
+sudo docker kill containerid
+
+#connect docker 
+sudo docker exec -it id bash
+
+#INSALL JENKINS IMAGE
+sudo docker run -d -p 8080:8080 jenkins/jenkins:lts-jdk17
+
+
+
